@@ -16,7 +16,7 @@ const beers = createSlice({
     getBeersStart(state) {
       state.isLoading = true;
     },
-    getBeersFailure(state){
+    getBeersFailure(state, action){
       state.isLoading = false;
       state.error = action.payload;
     },
