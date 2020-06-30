@@ -71,10 +71,10 @@ const Beers = ({ classes }) => {
   );
 };
 
-Beers.initialFetchData = ({dispatch, getState}) => {
-  // conditions to load data 
-  // server: these should always be met by server initial state
-  // client: these conditions will be met on first load of page
+Beers.initialFetchData = ({dispatch, getState, path}) => {
+  // Conditions to load data 
+  // Server: These should always be met by server initial state
+  // Client: These conditions will be met on first load of page
   const beersState = getState().beers
   const { beers, isLoading } = beersState
   if(beers.length === 0 && !isLoading ){
