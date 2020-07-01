@@ -49,9 +49,10 @@ Beers.initialFetchData = ({ dispatch, getState /*, path*/ }) => {
 ```
 RouteWithInitialMethod
 
-used to interecpt Route and run initialMethod if present
+used to intercept Route and run initialMethod if present (client side)
 
 useClientInitialMethod
 
 makes sure initialMethod is only run on client (looks for global window) 
+
 server runs the initialMethod with a Promise to allow async load to complete before rendering the component
