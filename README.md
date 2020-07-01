@@ -1,8 +1,10 @@
 # razzle-ssr-redux-example
 
+The main goal of this application was to implement SSR with initial data loading server side or client side, without frameworks like Gatsby, Next.js and etc.
+
 influenced heavily by https://github.com/AlexMubarakshin/ssr-example 
 
-but using Razzle and additional features
+but using Razzle with some additional features and tweeks
 
 points of note:
 
