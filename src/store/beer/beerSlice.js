@@ -16,19 +16,18 @@ const beers = createSlice({
     getBeersStart(state) {
       state.isLoading = true;
     },
-    getBeersFailure(state, action){
+    getBeersFailure(state, action) {
       state.isLoading = false;
       state.error = action.payload;
     },
-    getBeersSuccess(state, { payload: { beers, page }, }) {
-      state.beers =   state.beers.concat(beers);
+    getBeersSuccess(state, { payload: { beers, page } }) {
+      state.beers = state.beers.concat(beers);
       state.isLoading = false;
       state.error = null;
       state.page = page;
       state.hasMore = beers.length >= BEER_PER_PAGE;
     },
-
-  }
+  },
 });
 
 export const {

@@ -2,7 +2,7 @@
  * Insert data in template
  *
  * @export
- * @param {Object} helmet Helmet rendered static 
+ * @param {Object} helmet Helmet rendered static
  * @param {string} [content=''] JSS string
  * @param {*} store Redux store
  * @param {string} css CSS string
@@ -14,9 +14,9 @@ export default function template(helmet, content = '', store, css) {
   const stateScript = `<script id="ssr-preload-state">
                     window.__PRELOADED_STATE__ = ${JSON.stringify(state)}
                   </script>`;
-  
+
   const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
-  
+
   const page = `<!DOCTYPE html>
               <html lang="en">
               <head>

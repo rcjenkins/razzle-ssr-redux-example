@@ -10,7 +10,7 @@ const styles = {
     textAlign: 'center',
     fontSize: '2rem',
     margin: '4rem 0',
-  }
+  },
 };
 
 const NoMatch = ({ classes }) => (
@@ -20,10 +20,8 @@ const NoMatch = ({ classes }) => (
       <meta name="description" content="404 Brewdog's beer explorer" />
     </Helmet>
     <Container>
-      <Typography
-        className={classes.title}
-        variant="h1">
-        {'404 Brewdog\'s beer explorer'}
+      <Typography className={classes.title} variant="h1">
+        404 Brewdog&apos;s beer explorer
       </Typography>
     </Container>
   </div>

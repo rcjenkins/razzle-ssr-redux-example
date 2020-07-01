@@ -15,7 +15,9 @@ const store = createStore(window.__PRELOADED_STATE__);
 delete window.__PRELOADED_STATE__;
 
 var el = document.getElementById('ssr-preload-state');
-if(el) {el.remove()};
+if (el) {
+  el.remove();
+}
 
 hydrate(
   <Provider store={store}>
@@ -26,7 +28,7 @@ hydrate(
       </BrowserRouter>
     </ThemeProvider>
   </Provider>,
-  document.querySelector('#app')
+  document.querySelector('#app'),
 );
 
 if (module.hot) {

@@ -33,8 +33,8 @@ export default function render(url, store) {
             <App />
           </ThemeProvider>
         </StaticRouter>
-      </Provider>
-    )
+      </Provider>,
+    ),
   );
 
   const helmet = Helmet.renderStatic();

@@ -6,11 +6,11 @@ export default [
     path: '/',
     component: Home,
     exact: true,
-    
   },
   {
     path: '/beers',
     component: Beers,
-    exact: true
-  }
+    exact: true,
+    initialMethod: Beers.initialFetchData,
+  },
 ];
