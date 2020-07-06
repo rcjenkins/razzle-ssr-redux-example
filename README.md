@@ -1,12 +1,14 @@
 # razzle-ssr-redux-example
 
+## Goals
+
 The main goal of this application was to implement a Universal/Isomorphic React app with initial data loading server side or client side, using standard React without frameworks like Gatsby, Next.js and etc.
 
 influenced heavily by https://github.com/AlexMubarakshin/ssr-example 
 
 but using Razzle with some additional features and tweeks
 
-points of note:
+## Points of note
 
 the initialMethod is set up in the routes.js per route e.g.
 ```
@@ -63,6 +65,6 @@ makes sure initialMethod is only run on client (looks for global window)
 
 server runs the initialMethod with a Promise to allow async load to complete before rendering the component
 
-## To do
+## To-do
 
 Some error handling if API cannot be reached or errors
