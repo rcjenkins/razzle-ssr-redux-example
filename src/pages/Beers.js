@@ -57,7 +57,7 @@ const Beers = ({ classes }) => {
   );
 };
 
-Beers.initialFetchData = ({ dispatch, /* getState, path*/ }) => {
+Beers.initialFetchData = ({ dispatch }) => {
     return [dispatch(beersActions.fetchBeersIfNeeded())];
 };
 
