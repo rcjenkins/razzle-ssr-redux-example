@@ -57,17 +57,8 @@ const Beers = ({ classes }) => {
   );
 };
 
-Beers.initialFetchData = ({ dispatch, getState /*, path*/ }) => {
-  // Conditions to load data
-  // Server: These should always be met by server initial state
-  // Client: These conditions will be met on first load of page
-  const beersState = getState().beers;
-  const { beers, isLoading } = beersState;
-  if (beers.length === 0 && !isLoading) {
-    return [dispatch(beersActions.fetchBeers())];
-  }
-  // no need to fetch. Only client should get here
-  return [];
+Beers.initialFetchData = ({ dispatch, /* getState, path*/ }) => {
+    return [dispatch(beersActions.fetchBeersIfNeeded())];
 };
 
 export default withStyles(styles)(Beers);

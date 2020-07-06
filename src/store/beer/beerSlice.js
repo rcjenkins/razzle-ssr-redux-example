@@ -46,4 +46,17 @@ export const fetchBeers = (page = 1) => async (dispatch) => {
   }
 };
 
+// Conditions to load data
+// Server: These should always be met by server initial state
+// Client: These conditions will be met on first load of page
+export const fetchBeersIfNeeded = (page = 1) => async (dispatch, getState) => 
+{
+  const beersState = getState().beers;
+  const { beers, isLoading } = beersState;
+  if (beers.length === 0 && !isLoading) {
+    dispatch(fetchBeers())
+  }
+
+}
+
 export default beers.reducer;
