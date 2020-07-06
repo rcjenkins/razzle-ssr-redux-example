@@ -62,3 +62,7 @@ useClientInitialMethod
 makes sure initialMethod is only run on client (looks for global window) 
 
 server runs the initialMethod with a Promise to allow async load to complete before rendering the component
+
+## To do
+
+Some error handling if API cannot be reached or errors
