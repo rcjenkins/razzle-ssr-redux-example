@@ -26,8 +26,8 @@ export default function template(helmet, content = '', store, css) {
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <meta name="theme-color" content="#556cd6">
-                <link rel="shortcut icon" href="/assets/logos/favicon.ico" type="image/x-icon">
-                <link rel="icon" href="/assets/logos/favicon.ico" type="image/x-icon">
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+                <link rel="icon" href="/favicon.ico" type="image/x-icon">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
                 ${
                   process.env.NODE_ENV === 'production'

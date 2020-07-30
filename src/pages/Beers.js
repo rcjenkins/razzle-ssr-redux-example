@@ -58,7 +58,7 @@ const Beers = ({ classes }) => {
 };
 
 Beers.initialFetchData = ({ dispatch }) => {
-    return [dispatch(beersActions.fetchBeersIfNeeded())];
+  return [dispatch(beersActions.fetchBeersIfNeeded())];
 };
 
 export default withStyles(styles)(Beers);

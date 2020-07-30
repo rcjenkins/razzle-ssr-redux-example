@@ -53,7 +53,7 @@ export const fetchBeersIfNeeded = () => async (dispatch, getState) => {
   const beersState = getState().beers;
   const { beers, isLoading } = beersState;
   if (beers.length === 0 && !isLoading) {
-    dispatch(fetchBeers());
+    await dispatch(fetchBeers());
   }
 };
 
